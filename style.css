@@ -4,7 +4,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e0e7ff; /* Background color */
+    background-color: #dbdee0; /* Background color */
+}
+
+.input {
+    text-align: center;
+    color: #000000;
+    padding: 7px;
+    background-color: #e8ecef;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
 }
 
 .container {
@@ -17,9 +28,48 @@ body {
     max-width: 400px;
 }
 
+p {
+    text-align: center;
+    color: #a1a2a7;
+    padding: 7px;
+    background-color: #e8ecef; /* Background color for con */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+.gen{
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    background-color: #3da5ff; /* Background color for button */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 100px;
+}.copy{
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    background-color: #00da53; /* Background color for button */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 100px;
+}
+.con{
+    text-align: left;
+    padding: 15px;
+    background-color: #d2dbe2; /* Background color for con */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
 /* TODO: Add styles for labels, inputs, buttons, and output text */
 h1 {
-    font-size: 2.2em;
+    font-size: 2em;
     margin-bottom: 20px;
     color: #4a4a4a; /* Header color */
 }
