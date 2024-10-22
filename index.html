@@ -39,7 +39,7 @@
         </label>
         </div>
         <br>
-        <div class="con">
+                <div class="con">
         <label>
             <input type="checkbox" id="includeSpecialChars"> Include Special Characters
         </label>
@@ -48,14 +48,16 @@
         <br>        
 
         <!-- TODO: Create a text field to display the generated password -->
-        <p id="passwordOutput"></p>
+        <label for="passwordOutput">Generated Password:</label>
+        <input type="text" id="passwordOutput" readonly>
 
         <!-- TODO: Create a button to generate the password & BONUS: Add a "Copy to Clipboard" button -->
-        <button class="gen" id="generateBtn">Generate Password</button> <button class="copy" id="copyBtn">Copy to Clipboard</button>
+        <button class="gen" id="generateBtn">Generate Password</button> 
+        <button class="copy" id="copyBtn">Copy to Clipboard</button>
     </div>
         
 
-    <script src="script.js"></script>
-    <script src="dom.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="dom.js"></script>
 </body>
 </html>

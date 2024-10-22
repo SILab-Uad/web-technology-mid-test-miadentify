@@ -1,6 +1,6 @@
 // TODO: Implement the password generation logic based on user input
 
-const generatePassword = (length, options) => {
+export const generatePassword = (length, options) => {
     // Character sets for password generation
     const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const lowercase = "abcdefghijklmnopqrstuvwxyz";
@@ -14,7 +14,7 @@ const generatePassword = (length, options) => {
     if (options.includeNumbers) chars += numbers;
     if (options.includeSpecialChars) chars += specialChars;
     if (chars === "") {
-        alert("Mohon pilih salah satu opsi!");
+        throw new Error("At least one character type must be selected.");
         return "";
     }
     // TODO: Generate the password based on the selected criteria
@@ -25,18 +25,3 @@ const generatePassword = (length, options) => {
     }
     return password;
 };
-
-// TODO: Add event listener to the button to call generatePassword and display the output
-    document.getElementById('generateBtn').addEventListener('click', () => {
-        const length = parselnt(document.getElementById('length').ariaValueMax, 10);
-        const options = {
-            includeUppercase: document.getElementById('includeUppercase').checked,
-            includeLowercase: document.getElementById('includeLowercase').checked,
-            includeNumbers: document.getElementById('includeNumbers').checked,
-            includeSpecialChars: document.getElementById('includeSpecialChars').checked,
-
-        }
-        const password = generatePassword(length, options);
-        document.getElementById('passwordOutput').textContent = password;
-    });
-// BONUS: Implement the copy to clipboard functionality
